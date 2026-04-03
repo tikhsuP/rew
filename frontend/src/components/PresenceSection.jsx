@@ -3,121 +3,130 @@ import { Flag, Award, MapPin } from 'lucide-react';
 
 const PresenceSection = () => {
   const clients = [
-    { name: 'Britannia', logo: 'BRITANNIA' },
-    { name: 'Bikanervala', logo: 'BIKANERVALA' },
-    { name: 'Parle', logo: 'PARLE' },
-    { name: 'Patanjali', logo: 'PATANJALI' },
-    { name: 'P.E.Initin', logo: 'P.E.INITIN' },
-    { name: 'Bornn', logo: 'BORNN' },
-    { name: 'Biale', logo: 'BIALE' },
-    { name: 'Agson', logo: 'AGSON' },
-    { name: 'Bonn', logo: 'BONN' }
-  ];
-
-  const states = [
-    { name: 'Maharashtra', clients: 15, top: '45%', left: '25%' },
-    { name: 'Uttar Pradesh', clients: 12, top: '28%', left: '38%' },
-    { name: 'Gujarat', clients: 10, top: '38%', left: '18%' },
-    { name: 'Karnataka', clients: 8, top: '58%', left: '28%' },
-    { name: 'Tamil Nadu', clients: 9, top: '68%', left: '35%' },
-    { name: 'West Bengal', clients: 7, top: '32%', left: '52%' },
-    { name: 'Rajasthan', clients: 6, top: '32%', left: '25%' },
-    { name: 'Telangana', clients: 8, top: '52%', left: '35%' }
+    { name: 'BRITANNIA', color: '#d32f2f' },
+    { name: 'BIKANERVALA', color: '#ff6f00' },
+    { name: 'PARLE', color: '#0277bd' },
+    { name: 'PATANJALI', color: '#558b2f' },
+    { name: 'P.E.INITIN', color: '#1976d2' },
+    { name: 'BORNN', color: '#c62828' },
+    { name: 'BIALE', color: '#d32f2f' },
+    { name: 'AGSON', color: '#283593' },
+    { name: 'BONN', color: '#d32f2f' }
   ];
 
   return (
-    <section id="presence" className="py-16 sm:py-24 bg-gradient-to-b from-[#0a0a0a] via-[#121212] to-[#0a0a0a] relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201, 146, 63, 0.1) 35px, rgba(201, 146, 63, 0.1) 70px)' }}></div>
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12 sm:mb-16 text-center">
-          Our Presence <span className="text-[#c9923f]">Across India</span>
+    <section id="presence" className="py-20 bg-[#0f0f0f] relative">
+      <div className="container mx-auto px-6 lg:px-16">
+        {/* Section Title */}
+        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">
+          Our Presence Across India
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Map Section */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] p-8 sm:p-12 rounded-2xl border border-[#c9923f]/20 shadow-2xl hover:shadow-[#c9923f]/20 transition-all duration-500">
-              {/* India Map SVG Placeholder */}
-              <div className="relative w-full aspect-square max-w-md mx-auto">
-                <svg viewBox="0 0 400 500" className="w-full h-full">
-                  {/* Simplified India Map Outline */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left: India Map */}
+          <div className="space-y-8">
+            {/* Map Container */}
+            <div className="bg-gradient-to-br from-[#1a1410] to-[#0f0f0f] rounded-2xl p-10 border border-[#c9923f]/30 relative">
+              {/* India Map SVG */}
+              <div className="relative w-full max-w-md mx-auto">
+                <svg viewBox="0 0 500 600" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+                  {/* India outline path */}
                   <path
-                    d="M200 50 L220 80 L240 100 L250 140 L270 180 L280 220 L285 260 L280 300 L270 340 L250 380 L230 420 L210 450 L190 470 L170 450 L150 420 L130 380 L110 340 L100 300 L95 260 L100 220 L110 180 L130 140 L150 100 L170 80 L190 60 Z"
-                    fill="#1a1a1a"
+                    d="M 250 50 
+                       L 280 70 L 310 90 L 330 120 L 340 150 L 355 180 
+                       L 365 220 L 368 260 L 365 300 L 355 340 L 340 380 
+                       L 320 420 L 295 460 L 270 490 L 245 510 L 220 520 
+                       L 195 510 L 170 490 L 145 460 L 125 420 L 110 380 
+                       L 100 340 L 95 300 L 98 260 L 105 220 L 120 180 
+                       L 140 150 L 160 120 L 185 90 L 215 70 Z"
+                    fill="url(#indiaGradient)"
                     stroke="#c9923f"
                     strokeWidth="2"
-                    className="drop-shadow-[0_0_10px_rgba(201,146,63,0.3)]"
+                    filter="url(#glow)"
                   />
                   
-                  {/* State Highlights */}
-                  {states.map((state, index) => (
-                    <g key={index}>
-                      <circle
-                        cx={`${parseFloat(state.left)}`}
-                        cy={`${parseFloat(state.top)}`}
-                        r="8"
-                        fill="#c9923f"
-                        className="animate-pulse"
-                        style={{ animationDelay: `${index * 0.2}s` }}
-                      />
-                      <circle
-                        cx={`${parseFloat(state.left)}`}
-                        cy={`${parseFloat(state.top)}`}
-                        r="15"
-                        fill="none"
-                        stroke="#c9923f"
-                        strokeWidth="1"
-                        opacity="0.3"
-                        className="animate-ping"
-                        style={{ animationDelay: `${index * 0.2}s` }}
-                      />
-                    </g>
-                  ))}
+                  {/* Gradient definition */}
+                  <defs>
+                    <linearGradient id="indiaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: '#2a2015', stopOpacity: 1 }} />
+                      <stop offset="100%" style={{ stopColor: '#1a1410', stopOpacity: 1 }} />
+                    </linearGradient>
+                    
+                    {/* Glow filter */}
+                    <filter id="glow">
+                      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  
+                  {/* Glowing markers for major cities/states */}
+                  <circle cx="280" cy="200" r="6" fill="#ffd700" opacity="0.9">
+                    <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="280" cy="200" r="12" fill="none" stroke="#ffd700" strokeWidth="1" opacity="0.4">
+                    <animate attributeName="r" values="12;20;12" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                  
+                  <circle cx="150" cy="250" r="6" fill="#ffd700" opacity="0.9">
+                    <animate attributeName="r" values="6;8;6" dur="2.5s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="150" cy="250" r="12" fill="none" stroke="#ffd700" strokeWidth="1" opacity="0.4">
+                    <animate attributeName="r" values="12;20;12" dur="2.5s" repeatCount="indefinite" />
+                  </circle>
+                  
+                  <circle cx="200" cy="350" r="6" fill="#ffd700" opacity="0.9">
+                    <animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="200" cy="350" r="12" fill="none" stroke="#ffd700" strokeWidth="1" opacity="0.4">
+                    <animate attributeName="r" values="12;20;12" dur="3s" repeatCount="indefinite" />
+                  </circle>
                 </svg>
-
-                {/* State Info Tooltip (Example for UP) */}
-                <div className="absolute top-1/4 right-0 bg-black/90 backdrop-blur-sm px-4 py-3 rounded-lg border border-[#c9923f]/30 shadow-xl">
+                
+                {/* Tooltip */}
+                <div className="absolute top-1/4 right-4 bg-black/90 backdrop-blur-sm px-4 py-2 rounded-lg border border-[#c9923f]/40">
                   <div className="text-white font-semibold text-sm">Uttar Pradesh</div>
                   <div className="text-[#c9923f] text-xs">12 Clients</div>
                 </div>
               </div>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-8">
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] p-4 rounded-xl border border-[#c9923f]/20 text-center hover:border-[#c9923f]/50 transition-all duration-300">
+            {/* Stats Row */}
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-gradient-to-br from-[#1a1410] to-[#0f0f0f] rounded-lg p-4 border border-[#c9923f]/20 text-center hover:border-[#c9923f]/50 transition-all">
                 <Flag className="text-[#c9923f] mx-auto mb-2" size={24} />
-                <div className="text-white text-sm">Made in India</div>
+                <div className="text-white/90 text-sm font-medium">Made in India</div>
               </div>
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] p-4 rounded-xl border border-[#c9923f]/20 text-center hover:border-[#c9923f]/50 transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#1a1410] to-[#0f0f0f] rounded-lg p-4 border border-[#c9923f]/20 text-center hover:border-[#c9923f]/50 transition-all">
                 <Award className="text-[#c9923f] mx-auto mb-2" size={24} />
-                <div className="text-white text-sm">100+ Installations</div>
+                <div className="text-white/90 text-sm font-medium">100+ Installations</div>
               </div>
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] p-4 rounded-xl border border-[#c9923f]/20 text-center hover:border-[#c9923f]/50 transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#1a1410] to-[#0f0f0f] rounded-lg p-4 border border-[#c9923f]/20 text-center hover:border-[#c9923f]/50 transition-all">
                 <MapPin className="text-[#c9923f] mx-auto mb-2" size={24} />
-                <div className="text-white text-sm">Pan India Presence</div>
+                <div className="text-white/90 text-sm font-medium">Pan India Presence</div>
               </div>
             </div>
           </div>
 
-          {/* Client Logos */}
-          <div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {clients.map((client, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-xl shadow-lg hover:shadow-[#c9923f]/30 transition-all duration-300 hover:scale-105 flex items-center justify-center aspect-[4/3] group cursor-pointer"
-                >
-                  <div className="text-center">
-                    <div className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-[#c9923f] transition-colors duration-300">
-                      {client.logo}
-                    </div>
+          {/* Right: Client Logos */}
+          <div className="grid grid-cols-3 gap-4">
+            {clients.map((client, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-8 flex items-center justify-center aspect-[4/3] hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer"
+              >
+                <div className="text-center">
+                  <div 
+                    className="text-xl font-bold tracking-tight"
+                    style={{ color: client.color }}
+                  >
+                    {client.name}
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
