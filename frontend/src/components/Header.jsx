@@ -8,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -35,39 +35,36 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-black/95 backdrop-blur-md' : 'bg-black/80'
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="text-2xl sm:text-3xl font-bold">
-              <span className="text-[#c9923f] italic">REW</span>
-              <span className="text-white text-xs sm:text-sm ml-2 font-light tracking-wider">BAKERY MACHINES</span>
-            </div>
+          <div className="flex items-center gap-2">
+            <span className="text-[#c9923f] text-3xl font-bold italic tracking-wider">REW</span>
+            <span className="text-white text-sm font-light tracking-[0.2em] uppercase">BAKERY</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-white/90 hover:text-[#c9923f] transition-colors duration-300 text-sm font-medium relative group"
+                className="text-white/90 hover:text-[#c9923f] transition-colors text-sm tracking-wide"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9923f] transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
           </nav>
 
-          {/* GST & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* Right: GST & Button */}
+          <div className="hidden lg:flex items-center gap-6">
             <span className="text-white/70 text-sm">GST: 09ACSPC3B991</span>
             <Button
               onClick={() => scrollToSection('Contact')}
-              className="bg-gradient-to-r from-[#c9923f] to-[#d4a574] hover:from-[#b8822e] hover:to-[#c9923f] text-white font-semibold px-6 py-2 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-[#c9923f] hover:bg-[#b8822e] text-white font-medium px-6 py-2 rounded-md transition-all"
             >
               Get Quote
             </Button>
@@ -75,7 +72,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,12 +81,12 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-black/95 backdrop-blur-sm py-4 space-y-4 border-t border-white/10">
+          <div className="lg:hidden bg-black/95 py-4 space-y-3">
             {navItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="block w-full text-left px-4 py-2 text-white/90 hover:text-[#c9923f] hover:bg-white/5 transition-all duration-300"
+                className="block w-full text-left px-4 py-2 text-white/90 hover:text-[#c9923f] transition-colors"
               >
                 {item}
               </button>
@@ -98,7 +95,7 @@ const Header = () => {
             <div className="px-4">
               <Button
                 onClick={() => scrollToSection('Contact')}
-                className="w-full bg-gradient-to-r from-[#c9923f] to-[#d4a574] hover:from-[#b8822e] hover:to-[#c9923f] text-white font-semibold transition-all duration-300"
+                className="w-full bg-[#c9923f] hover:bg-[#b8822e] text-white"
               >
                 Get Quote
               </Button>
