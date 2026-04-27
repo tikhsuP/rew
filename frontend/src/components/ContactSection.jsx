@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Award } from 'lucide-react';
 
 const ContactSection = () => {
   return (
