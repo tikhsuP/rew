@@ -35,31 +35,28 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/95 backdrop-blur-md' : 'bg-black/80'
+        isScrolled ? 'bg-[#2a1810]/95 backdrop-blur-md' : 'bg-[#2a1810]/80'
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <div className="flex items-center gap-2">
-            <span className="text-[#c9923f] text-3xl font-bold italic tracking-wider">REW</span>
+            <span className="text-[#d4a574] text-3xl font-bold italic tracking-wider">REW</span>
             <span className="text-white text-xs font-light tracking-wider uppercase">Rahul Engineering Work</span>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-white/90 hover:text-[#c9923f] transition-colors text-sm tracking-wide"
+                className="text-white/90 hover:text-[#d4a574] transition-colors text-sm tracking-wide"
               >
                 {item}
               </button>
             ))}
           </nav>
 
-          {/* Right: GST & Button */}
           <div className="hidden lg:flex items-center gap-6">
             <span className="text-white/70 text-sm">GST: 09ACSPC3613R1Z1</span>
             <Button
@@ -70,7 +67,6 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="lg:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -79,14 +75,13 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-black/95 py-4 space-y-3">
+          <div className="lg:hidden bg-[#2a1810]/95 py-4 space-y-3">
             {navItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="block w-full text-left px-4 py-2 text-white/90 hover:text-[#c9923f] transition-colors"
+                className="block w-full text-left px-4 py-2 text-white/90 hover:text-[#d4a574] transition-colors"
               >
                 {item}
               </button>

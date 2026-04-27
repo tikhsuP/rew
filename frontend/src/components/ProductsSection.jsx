@@ -32,37 +32,32 @@ const ProductsSection = () => {
   ];
 
   return (
-    <section id="products" className="py-16 bg-[#0f0f0f]">
+    <section id="products" className="py-16 bg-[#1f1108]">
       <div className="container mx-auto px-6 lg:px-12">
-        {/* Section Title */}
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12">
           Our Products
         </h2>
 
-        {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {products.map((product) => (
             <div
               key={product.id}
-              className="group bg-[#1a1410] rounded-lg overflow-hidden border border-[#c9923f]/10 hover:border-[#c9923f]/30 transition-all"
+              className="group bg-[#3d2817] rounded-lg overflow-hidden border border-[#c9923f]/10 hover:border-[#c9923f]/30 transition-all"
             >
-              {/* Product Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2a1810]/60 to-transparent"></div>
               </div>
 
-              {/* Product Info */}
               <div className="p-4 text-center">
                 <h3 className="text-white font-semibold text-base mb-3">
                   {product.name}
                 </h3>
 
-                {/* View Details Button */}
                 <Button
                   onClick={() => {
                     const element = document.getElementById('contact');

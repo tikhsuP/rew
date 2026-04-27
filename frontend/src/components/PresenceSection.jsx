@@ -39,29 +39,27 @@ const PresenceSection = () => {
   ];
 
   return (
-    <section id="presence" className="py-16 bg-[#0a0a0a]">
+    <section id="presence" className="py-16 bg-[#2a1810]">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
           Our Clients Across India
         </h2>
 
-        {/* Stats Badges */}
         <div className="flex flex-wrap gap-4 mb-12">
-          <div className="flex items-center gap-2 bg-[#1a1410] px-4 py-2 rounded border border-[#c9923f]/20">
-            <Flag className="text-[#c9923f]" size={18} />
+          <div className="flex items-center gap-2 bg-[#3d2817] px-4 py-2 rounded border border-[#c9923f]/20">
+            <Flag className="text-[#d4a574]" size={18} />
             <span className="text-white/90 text-sm">Made in India</span>
           </div>
-          <div className="flex items-center gap-2 bg-[#1a1410] px-4 py-2 rounded border border-[#c9923f]/20">
-            <Award className="text-[#c9923f]" size={18} />
+          <div className="flex items-center gap-2 bg-[#3d2817] px-4 py-2 rounded border border-[#c9923f]/20">
+            <Award className="text-[#d4a574]" size={18} />
             <span className="text-white/90 text-sm">100+ Clients</span>
           </div>
-          <div className="flex items-center gap-2 bg-[#1a1410] px-4 py-2 rounded border border-[#c9923f]/20">
-            <MapPin className="text-[#c9923f]" size={18} />
+          <div className="flex items-center gap-2 bg-[#3d2817] px-4 py-2 rounded border border-[#c9923f]/20">
+            <MapPin className="text-[#d4a574]" size={18} />
             <span className="text-white/90 text-sm">Pan India</span>
           </div>
         </div>
 
-        {/* Client Logos Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
           {clients.map((client, index) => (
             <div
