@@ -61,7 +61,7 @@ const Header = () => {
 
           {/* Right: GST & Button */}
           <div className="hidden lg:flex items-center gap-6">
-            <span className="text-white/70 text-sm">GST: 09ACSPC3B991</span>
+            <span className="text-white/70 text-sm">GST: 09ACSPC3613R1Z1</span>
             <Button
               onClick={() => scrollToSection('Contact')}
               className="bg-[#c9923f] hover:bg-[#b8822e] text-white font-medium px-6 py-2 rounded-md transition-all"
@@ -91,7 +91,7 @@ const Header = () => {
                 {item}
               </button>
             ))}
-            <div className="px-4 py-2 text-white/70 text-sm">GST: 09ACSPC3B991</div>
+            <div className="px-4 py-2 text-white/70 text-sm">GST: 09ACSPC3613R1Z1</div>
             <div className="px-4">
               <Button
                 onClick={() => scrollToSection('Contact')}

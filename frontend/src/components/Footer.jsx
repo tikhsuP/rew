@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,12 +8,6 @@ const Footer = () => {
     { label: 'Products', id: 'products' },
     { label: 'Clients', id: 'presence' },
     { label: 'Privacy Policy', id: null }
-  ];
-
-  const socialLinks = [
-    { icon: Facebook, link: 'https://facebook.com' },
-    { icon: Instagram, link: 'https://instagram.com' },
-    { icon: Linkedin, link: 'https://linkedin.com' }
   ];
 
   const scrollToSection = (sectionId) => {
@@ -33,7 +27,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Left: Copyright */}
             <div className="text-white/60 text-sm">
-              © REW Bakery Machines. All rights reserved.
+              © {currentYear} REW Bakery Machines. All rights reserved.
             </div>
 
             {/* Center: Links */}
@@ -47,25 +41,19 @@ const Footer = () => {
                   {link.label}
                 </button>
               ))}
-              <span className="text-white/60 text-sm">GST: 09ACSPC3B991</span>
+              <span className="text-white/60 text-sm">GST: 09ACSPC3613R1Z1</span>
             </div>
 
-            {/* Right: Social Icons */}
+            {/* Right: Social Icon */}
             <div className="flex gap-3">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 bg-[#1a1410] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
-                  >
-                    <Icon className="text-[#c9923f]" size={16} />
-                  </a>
-                );
-              })}
+              <a
+                href="https://www.instagram.com/rew_bakerymachines"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-[#1a1410] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
+              >
+                <Instagram className="text-[#c9923f]" size={16} />
+              </a>
             </div>
           </div>
         </div>
