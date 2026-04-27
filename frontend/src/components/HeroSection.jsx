@@ -66,7 +66,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 bg-black/40 px-4 py-2 rounded">
               <Award className="text-[#c9923f]" size={18} />
-              <span className="text-white text-sm">100+ Installations</span>
+              <span className="text-white text-sm">500+ Installations</span>
             </div>
           </div>
         </div>

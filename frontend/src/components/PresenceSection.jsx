@@ -53,7 +53,7 @@ const PresenceSection = () => {
           </div>
           <div className="flex items-center gap-2 bg-[#1a1410] px-4 py-2 rounded border border-[#c9923f]/20">
             <Award className="text-[#c9923f]" size={18} />
-            <span className="text-white/90 text-sm">{clients.length} Clients</span>
+            <span className="text-white/90 text-sm">100+ Clients</span>
           </div>
           <div className="flex items-center gap-2 bg-[#1a1410] px-4 py-2 rounded border border-[#c9923f]/20">
             <MapPin className="text-[#c9923f]" size={18} />
