@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1f1108] py-6 border-t border-[#c9923f]/10">
+    <footer className="bg-[#0f0805] py-6 border-t border-[#c9923f]/10">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/60 text-sm">
@@ -45,7 +45,7 @@ const Footer = () => {
               href="https://www.instagram.com/rew_bakerymachines"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 bg-[#3d2817] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
+              className="w-9 h-9 bg-[#2a1810] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
             >
               <Instagram className="text-[#d4a574]" size={16} />
             </a>

@@ -32,7 +32,7 @@ const ProductsSection = () => {
   ];
 
   return (
-    <section id="products" className="py-16 bg-[#1f1108]">
+    <section id="products" className="py-16 bg-[#0f0805]">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12">
           Our Products
@@ -42,7 +42,7 @@ const ProductsSection = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="group bg-[#3d2817] rounded-lg overflow-hidden border border-[#c9923f]/10 hover:border-[#c9923f]/30 transition-all"
+              className="group bg-[#2a1810] rounded-lg overflow-hidden border border-[#c9923f]/10 hover:border-[#c9923f]/30 transition-all"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -50,7 +50,7 @@ const ProductsSection = () => {
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2a1810]/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a0f08]/60 to-transparent"></div>
               </div>
 
               <div className="p-4 text-center">

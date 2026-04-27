@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Instagram, Award } from 'lucide-react';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-16 bg-[#2a1810]">
+    <section id="contact" className="py-16 bg-[#1a0f08]">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12">
           Get in Touch
@@ -78,7 +78,7 @@ const ContactSection = () => {
                   href="https://www.instagram.com/rew_bakerymachines" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-[#3d2817] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
+                  className="w-12 h-12 bg-[#2a1810] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
                 >
                   <Instagram className="text-[#d4a574]" size={20} />
                 </a>

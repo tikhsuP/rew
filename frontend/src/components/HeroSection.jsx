@@ -20,7 +20,7 @@ const HeroSection = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#2a1810] via-[#2a1810]/70 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1a0f08] via-[#1a0f08]/70 to-transparent"></div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-2xl">
@@ -53,11 +53,11 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-wrap gap-6">
-            <div className="flex items-center gap-2 bg-[#3d2817]/60 px-4 py-2 rounded">
+            <div className="flex items-center gap-2 bg-[#2a1810]/60 px-4 py-2 rounded">
               <Flag className="text-[#d4a574]" size={18} />
               <span className="text-white text-sm">Made in India</span>
             </div>
-            <div className="flex items-center gap-2 bg-[#3d2817]/60 px-4 py-2 rounded">
+            <div className="flex items-center gap-2 bg-[#2a1810]/60 px-4 py-2 rounded">
               <Award className="text-[#d4a574]" size={18} />
               <span className="text-white text-sm">500+ Installations</span>
             </div>

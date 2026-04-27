@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#2a1810]/95 backdrop-blur-md' : 'bg-[#2a1810]/80'
+        isScrolled ? 'bg-[#1a0f08]/95 backdrop-blur-md' : 'bg-[#1a0f08]/80'
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
@@ -76,7 +76,7 @@ const Header = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-[#2a1810]/95 py-4 space-y-3">
+          <div className="lg:hidden bg-[#1a0f08]/95 py-4 space-y-3">
             {navItems.map((item) => (
               <button
                 key={item}
