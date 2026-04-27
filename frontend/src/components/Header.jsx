@@ -43,7 +43,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <span className="text-[#c9923f] text-3xl font-bold italic tracking-wider">REW</span>
-            <span className="text-white text-sm font-light tracking-[0.2em] uppercase">BAKERY</span>
+            <span className="text-white text-xs font-light tracking-wider uppercase">Rahul Engineering Work</span>
           </div>
 
           {/* Desktop Navigation */}
