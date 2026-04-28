@@ -3,39 +3,39 @@ import { Flag, Award, MapPin } from 'lucide-react';
 
 const PresenceSection = () => {
   const clients = [
-    { name: 'Bakked Diamond' },
-    { name: 'Bread-G' },
-    { name: 'HAFIZ A SATTAR SONS SEWAI' },
-    { name: 'Jail Police' },
-    { name: 'Ashok' },
-    { name: 'Goldiee Masale' },
-    { name: 'Bran-O' },
-    { name: 'Popular' },
-    { name: 'Gomti Food Products' },
-    { name: 'Milkmade' },
-    { name: 'Swati Food Products' },
-    { name: 'Baked Well' },
-    { name: 'Nova' },
-    { name: 'Mother' },
-    { name: 'OnceMore Rainforest' },
-    { name: 'Maheshwari Sweets' },
-    { name: 'thekaranfoods' },
-    { name: 'Paradise' },
-    { name: 'Veetaday Industries' },
-    { name: 'Good Morning Nutritive India' },
-    { name: 'Kalory' },
-    { name: 'Amrit Taaza' },
-    { name: 'Anand Bakery' },
-    { name: 'Mithila Naturals' },
-    { name: 'Sangri-La Nutri Food Products' },
-    { name: 'SDZ FOOD PRODUCTS' },
-    { name: 'GS Manglani' },
-    { name: 'Meera Bakers' },
-    { name: 'Badshah' },
-    { name: 'Banas Dairy' },
-    { name: 'Amul' },
-    { name: 'Britannia' },
-    { name: 'Parle' }
+    { name: 'Bakked Diamond', logo: null },
+    { name: 'Bread-G', logo: null },
+    { name: 'HAFIZ A SATTAR SONS SEWAI', logo: null },
+    { name: 'Jail Police', logo: null },
+    { name: 'Ashok', logo: null },
+    { name: 'Goldiee Masale', logo: null },
+    { name: 'Bran-O', logo: null },
+    { name: 'Popular', logo: null },
+    { name: 'Gomti Food Products', logo: null },
+    { name: 'Milkmade', logo: null },
+    { name: 'Swati Food Products', logo: null },
+    { name: 'Baked Well', logo: null },
+    { name: 'Nova', logo: null },
+    { name: 'Mother', logo: null },
+    { name: 'OnceMore Rainforest', logo: null },
+    { name: 'Maheshwari Sweets', logo: null },
+    { name: 'thekaranfoods', logo: null },
+    { name: 'Paradise', logo: null },
+    { name: 'Veetaday Industries', logo: null },
+    { name: 'Good Morning Nutritive India', logo: null },
+    { name: 'Kalory', logo: null },
+    { name: 'Amrit Taaza', logo: null },
+    { name: 'Anand Bakery', logo: null },
+    { name: 'Mithila Naturals', logo: null },
+    { name: 'Sangri-La Nutri Food Products', logo: null },
+    { name: 'SDZ FOOD PRODUCTS', logo: null },
+    { name: 'GS Manglani', logo: null },
+    { name: 'Meera Bakers', logo: null },
+    { name: 'Badshah', logo: null },
+    { name: 'Banas Dairy', logo: null },
+    { name: 'Amul', logo: '/amul-logo.png' },
+    { name: 'Britannia', logo: '/britannia-logo.png' },
+    { name: 'Parle', logo: '/parle-logo.png' }
   ];
 
   return (
@@ -66,11 +66,19 @@ const PresenceSection = () => {
               key={index}
               className="bg-white rounded-lg p-6 flex items-center justify-center h-28 hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
-              <div className="text-center">
-                <div className="text-sm font-bold text-gray-800 leading-tight line-clamp-3 group-hover:text-[#c9923f] transition-colors">
-                  {client.name}
+              {client.logo ? (
+                <img 
+                  src={client.logo} 
+                  alt={client.name}
+                  className="max-w-full max-h-20 object-contain"
+                />
+              ) : (
+                <div className="text-center">
+                  <div className="text-sm font-bold text-gray-800 leading-tight line-clamp-3 group-hover:text-[#c9923f] transition-colors">
+                    {client.name}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
