@@ -55,7 +55,7 @@ const ContactSection = () => {
                 <div className="text-white font-semibold mb-2">Address</div>
                 <p className="text-white/70 text-lg">
                   F-29, Site-5, Road No. 6,<br />
-                  Udyog Kunj, Panki Kanpur<br />
+                  Udyog Kunj, Panki, Kanpur,<br />
                   Uttar Pradesh
                 </p>
               </div>
