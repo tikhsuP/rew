@@ -76,8 +76,8 @@ const PresenceSection = () => {
                     client.name === 'Popular' || 
                     client.name === 'Parle' || 
                     client.name === 'Britannia'
-                      ? 'w-[90%] h-[90%]' 
-                      : 'w-[85%] h-[85%]'
+                      ? 'w-[98%] h-[98%]' 
+                      : 'w-[95%] h-[95%]'
                   }`}
                 />
               ) : (
