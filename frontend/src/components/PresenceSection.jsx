@@ -4,7 +4,7 @@ import { Flag, Award, MapPin } from 'lucide-react';
 const PresenceSection = () => {
   const clients = [
     { name: 'Bakked Diamond', logo: '/bakked-diamond-logo.png' },
-    { name: 'Bread-G', logo: null },
+    { name: 'Bread-G', logo: '/breadg-logo.png' },
     { name: 'HAFIZ A SATTAR SONS SEWAI', logo: '/hafiz-logo.png' },
     { name: 'Jail Police', logo: '/jail-police-logo.png' },
     { name: 'Ashok', logo: '/ashok-logo.png' },
