@@ -40,8 +40,12 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-2">
-            <span className="text-[#d4a574] text-3xl font-bold italic tracking-wider">REW</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/rew-logo.png" 
+              alt="REW Logo" 
+              className="h-12 w-12 object-contain"
+            />
             <span className="text-white text-xs font-light tracking-wider uppercase">Rahul Engineering Work</span>
           </div>
 
