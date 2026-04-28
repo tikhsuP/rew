@@ -3,11 +3,11 @@ import { Flag, Award, MapPin } from 'lucide-react';
 
 const PresenceSection = () => {
   const clients = [
-    { name: 'Bakked Diamond', logo: null },
+    { name: 'Bakked Diamond', logo: '/bakked-diamond-logo.png' },
     { name: 'Bread-G', logo: null },
-    { name: 'HAFIZ A SATTAR SONS SEWAI', logo: null },
+    { name: 'HAFIZ A SATTAR SONS SEWAI', logo: '/hafiz-logo.png' },
     { name: 'Jail Police', logo: null },
-    { name: 'Ashok', logo: null },
+    { name: 'Ashok', logo: '/ashok-logo.png' },
     { name: 'Goldiee Masale', logo: null },
     { name: 'Bran-O', logo: null },
     { name: 'Popular', logo: null },
@@ -15,7 +15,7 @@ const PresenceSection = () => {
     { name: 'Milkmade', logo: null },
     { name: 'Swati Food Products', logo: null },
     { name: 'Baked Well', logo: null },
-    { name: 'Nova', logo: null },
+    { name: 'Nova', logo: '/nova-logo.png' },
     { name: 'Mother', logo: null },
     { name: 'OnceMore Rainforest', logo: null },
     { name: 'Maheshwari Sweets', logo: null },
@@ -24,7 +24,7 @@ const PresenceSection = () => {
     { name: 'Veetaday Industries', logo: null },
     { name: 'Good Morning Nutritive India', logo: null },
     { name: 'Kalory', logo: null },
-    { name: 'Amrit Taaza', logo: null },
+    { name: 'Amrit Taaza', logo: '/amrit-taaza-logo.png' },
     { name: 'Anand Bakery', logo: null },
     { name: 'Mithila Naturals', logo: null },
     { name: 'Sangri-La Nutri Food Products', logo: null },
