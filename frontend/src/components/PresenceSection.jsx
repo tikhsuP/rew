@@ -70,7 +70,11 @@ const PresenceSection = () => {
                 <img 
                   src={client.logo} 
                   alt={client.name}
-                  className="max-w-full max-h-20 object-contain"
+                  className={`object-contain ${
+                    client.name === 'Nova' || client.name === 'OnceMore Rainforest' 
+                      ? 'max-w-full max-h-24' 
+                      : 'max-w-full max-h-20'
+                  }`}
                 />
               ) : (
                 <div className="text-center">
