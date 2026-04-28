@@ -71,7 +71,11 @@ const PresenceSection = () => {
                   src={client.logo} 
                   alt={client.name}
                   className={`object-contain ${
-                    client.name === 'Nova' || client.name === 'OnceMore Rainforest' 
+                    client.name === 'Nova' || 
+                    client.name === 'OnceMore Rainforest' || 
+                    client.name === 'Popular' || 
+                    client.name === 'Parle' || 
+                    client.name === 'Britannia'
                       ? 'max-w-full max-h-24' 
                       : 'max-w-full max-h-20'
                   }`}
