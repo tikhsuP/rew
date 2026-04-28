@@ -30,7 +30,7 @@ const PresenceSection = () => {
     { name: 'Sangri-La Nutri Food Products', logo: '/sangrila-logo.png' },
     { name: 'SDZ FOOD PRODUCTS', logo: '/sdz-logo.png' },
     { name: 'GS Manglani', logo: '/gs-manglani-logo.png' },
-    { name: 'Meera Bakers', logo: null },
+    { name: 'Meera Bakers', logo: '/meera-bakers-logo.png' },
     { name: 'Badshah', logo: '/badshah-logo.png' },
     { name: 'Banas Dairy', logo: '/banas-dairy-logo.png' },
     { name: 'Amul', logo: '/amul-logo.png' },
