@@ -64,11 +64,7 @@ const PresenceSection = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className={`bg-white rounded-lg p-6 flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer ${
-                client.name === 'Nova' || client.name === 'OnceMore Rainforest'
-                  ? 'h-36'
-                  : 'h-28'
-              }`}
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-28 hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
               {client.logo ? (
                 <img 
