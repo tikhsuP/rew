@@ -54,7 +54,9 @@ const ContactSection = () => {
               <div>
                 <div className="text-white font-semibold mb-2">Address</div>
                 <p className="text-white/70 text-lg">
-                  Udyog Nagar, Panki, Kanpur
+                  F-29, Site-5, Road No. 6,<br />
+                  Udyog Kunj, Panki Kanpur<br />
+                  Uttar Pradesh
                 </p>
               </div>
             </div>
@@ -88,7 +90,7 @@ const ContactSection = () => {
 
           <div className="h-[500px] rounded-xl overflow-hidden border border-[#c9923f]/20">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.2376742897846!2d80.3126!3d26.4499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDI2JzU5LjYiTiA4MMKwMTgnNDUuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://maps.google.com/maps?q=26.449514,80.271431&hl=en&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
