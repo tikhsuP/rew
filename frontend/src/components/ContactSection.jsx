@@ -34,18 +34,20 @@ const ContactSection = () => {
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[#c9923f]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/whatsapp.svg" className="text-[#d4a574]" size={20} />
+                <img src="/whatsapp.svg" width={20} height={20} />
               </div>
               <div>
                 <div className="text-white font-semibold mb-2">WhatsApp</div>
                 <a 
                   href="https://wa.me/918077558106?text=Hi REW, I am interested in your product(s). Let's connect."
+                  target="_blank"
                   className="text-white/70 hover:text-[#d4a574] transition-colors text-lg block mb-1"
                 >
                   +91 8077558106
                 </a>
                 <a 
                   href="https://wa.me/919415161097?text=Hi REW, I am interested in your product(s). Let's connect."
+                  target="_blank"
                   className="text-white/70 hover:text-[#d4a574] transition-colors text-lg block"
                 >
                   +91 9415161097
@@ -54,7 +56,7 @@ const ContactSection = () => {
             </div>
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[#c9923f]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <img src="/instagram.svg" className="text-[#d4a574]" size={20} />
+                  <img src="/instagram.svg" width={20} height={20} />
               </div>
               <div className="text-white font-semibold mb-2">
                 <div className="text-white font-semibold mb-2">Instagram</div>

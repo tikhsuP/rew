@@ -70,13 +70,7 @@ const PresenceSection = () => {
                 <img 
                   src={client.logo} 
                   alt={client.name}
-                  className={`object-contain ${
-                    client.name === 'Nova' || client.name === 'OnceMore Rainforest'
-                      ? 'w-full h-full' 
-                      : client.name === 'Popular' || client.name === 'Parle' || client.name === 'Britannia'
-                      ? 'w-[98%] h-[98%]' 
-                      : 'w-[95%] h-[95%]'
-                  }`}
+                  className={`object-contain ${'w-[95%] h-[95%]'}`}
                 />
               ) : (
                 <div className="text-center">
