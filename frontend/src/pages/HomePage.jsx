@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import PresenceSection from '../components/PresenceSection';
 import ProductsSection from '../components/ProductsSection';
+import RecognitionsSection from '../components/RecognitionsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -13,6 +14,7 @@ const HomePage = () => {
       <HeroSection />
       <PresenceSection />
       <ProductsSection />
+      <RecognitionsSection />
       <ContactSection />
       <Footer />
     </div>

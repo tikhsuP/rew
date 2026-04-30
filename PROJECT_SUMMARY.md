@@ -133,7 +133,7 @@ All sections adapt seamlessly:
 ## 🔗 Contact Information
 
 - **Phone**: +91 80775 58106
-- **Email**: info@rewbakerymachines.com
+- **Email**: rahulengineering3@gmail.com
 - **Address**: A-42, Industrial Area, Meerut, UP, India
 - **GST**: 09ACSPC3B991
 

@@ -113,3 +113,38 @@ code {
         border-bottom-color: inherit;
     }
 }
+
+
+/* Recognitions section marquee */
+.recognitions-marquee-mask {
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0,
+        black 80px,
+        black calc(100% - 80px),
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0,
+        black 80px,
+        black calc(100% - 80px),
+        transparent 100%
+    );
+    overflow: hidden;
+}
+.recognitions-marquee-track {
+    width: max-content;
+    animation: recognitions-marquee 30s linear infinite;
+}
+.recognitions-marquee-track:hover {
+    animation-play-state: paused;
+}
+@keyframes recognitions-marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

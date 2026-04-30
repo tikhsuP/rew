@@ -39,10 +39,10 @@ const ContactSection = () => {
               <div>
                 <div className="text-white font-semibold mb-2">Email</div>
                 <a 
-                  href="mailto:info@rewbakerymachines.com" 
+                  href="mailto:rahulengineering3@gmail.com" 
                   className="text-white/70 hover:text-[#d4a574] transition-colors text-lg break-all"
                 >
-                  info@rewbakerymachines.com
+                  rahulengineering3@gmail.com
                 </a>
               </div>
             </div>
@@ -81,7 +81,7 @@ const ContactSection = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-[#2a1810] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
-                >
+                > 
                   <Instagram className="text-[#d4a574]" size={20} />
                 </a>
               </div>

@@ -14,7 +14,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Products', 'Clients', 'About', 'Contact'];
+  const navItems = ['Home', 'Products', 'Clients', 'Recognitions', 'Contact'];
 
   const scrollToSection = (item) => {
     setIsMobileMenuOpen(false);
@@ -22,6 +22,7 @@ const Header = () => {
       'Home': 'hero',
       'Products': 'products',
       'Clients': 'presence',
+      'Recognitions': 'recognitions',
       'About': 'about',
       'Contact': 'contact'
     };
@@ -46,7 +47,7 @@ const Header = () => {
               alt="REW Logo" 
               className="h-12 w-12 object-contain"
             />
-            <span className="text-white text-xs font-light tracking-wider uppercase">Rahul Engineering Work</span>
+            <span className="text-white text-xs font-light tracking-wider uppercase">Rahul Engineering Works</span>
           </div>
 
           <nav className="hidden lg:flex items-center gap-8">
