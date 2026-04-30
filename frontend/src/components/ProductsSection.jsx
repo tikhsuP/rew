@@ -5,30 +5,105 @@ import { ChevronDown } from 'lucide-react';
 const ProductsSection = () => {
   const products = [
     {
-      id: 1,
-      name: 'Industrial Oven',
+       id: 1,
+      name: 'Rotary Rack Oven',
       image: 'https://images.unsplash.com/photo-1703607873351-1406161a2c66?q=80&w=600'
     },
     {
       id: 2,
-      name: 'Rotary Rack Oven',
+      name: 'Swing Tray Oven',
       image: 'https://images.pexels.com/photos/6291407/pexels-photo-6291407.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       id: 3,
-      name: 'Rusk Making Machine',
+      name: 'Chain Type Tunnel Oven',
       image: 'https://images.pexels.com/photos/29226707/pexels-photo-29226707.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       id: 4,
-      name: 'Spiral Mixer',
+      name: 'Wire Mesh Type Tunnel Oven',
       image: 'https://images.unsplash.com/photo-1768321611024-39d91399abaf?q=80&w=600'
     },
     {
       id: 5,
-      name: 'Belt Conveyor',
+      name: 'Slow Speed Mixer',
       image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
-    }
+    },
+    {
+      id: 6,
+      name: 'Spiral Mixer',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 7,
+      name: 'High Speed Mixer',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 8,
+      name: 'Planetary Mixer',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 9,
+      name: 'Slow Speed Slicer',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 10,
+      name: 'High Speed Slicer',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 11,
+      name: 'Air Washer',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 12,
+      name: 'Depanning Table',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 13,
+      name: 'Cooling Trolley',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 14,
+      name: 'Moulds Conveyor',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 15,
+      name: 'Loading And Unloading Conveyor',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 16,
+      name: 'Batch Coding Conveyor',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 17,
+      name: 'Moulds',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 18,
+      name: 'Lids',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 19,
+      name: 'Trays',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
+    {
+      id: 20,
+      name: 'Bun Rings',
+      image: 'https://images.unsplash.com/photo-1687054445403-af57b11883ef?q=80&w=600'
+    },
   ];
 
   return (
@@ -58,7 +133,7 @@ const ProductsSection = () => {
                   {product.name}
                 </h3>
 
-                <Button
+                {/* <Button
                   onClick={() => {
                     const element = document.getElementById('contact');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
@@ -67,7 +142,7 @@ const ProductsSection = () => {
                 >
                   View Details
                   <ChevronDown size={14} />
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}

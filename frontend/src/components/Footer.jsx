@@ -11,10 +11,6 @@ const Footer = () => {
           <div className="text-white/60 text-sm">
             © {currentYear} Rahul Engineering Works. All rights reserved.
           </div>
-          <div className="flex flex-wrap gap-6 items-center">
-            
-            <span className="text-white/60 text-sm">Make in India</span>
-          </div>
         </div>
       </div>
     </footer>

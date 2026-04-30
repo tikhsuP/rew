@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Award } from 'lucide-react';
+import { Phone, Mail, MapPin, Award } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -32,6 +32,42 @@ const ContactSection = () => {
               </div>
             </div>
 
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-[#c9923f]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <img src="/whatsapp.svg" className="text-[#d4a574]" size={20} />
+              </div>
+              <div>
+                <div className="text-white font-semibold mb-2">WhatsApp</div>
+                <a 
+                  href="https://wa.me/918077558106?text=Hi REW, I am interested in your product(s). Let's connect."
+                  className="text-white/70 hover:text-[#d4a574] transition-colors text-lg block mb-1"
+                >
+                  +91 8077558106
+                </a>
+                <a 
+                  href="https://wa.me/919415161097?text=Hi REW, I am interested in your product(s). Let's connect."
+                  className="text-white/70 hover:text-[#d4a574] transition-colors text-lg block"
+                >
+                  +91 9415161097
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-[#c9923f]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src="/instagram.svg" className="text-[#d4a574]" size={20} />
+              </div>
+              <div className="text-white font-semibold mb-2">
+                <div className="text-white font-semibold mb-2">Instagram</div>
+              <a 
+                  href="https://www.instagram.com/rew_bakerymachines"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-[#d4a574] transition-colors text-lg break-all"
+                >
+                  rew_bakerymachines
+              </a>
+                </div>
+            </div>
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[#c9923f]/10 rounded-full flex items-center justify-center flex-shrink-0">
                 <Mail className="text-[#d4a574]" size={20} />
@@ -70,20 +106,6 @@ const ContactSection = () => {
                 <p className="text-white/70 text-lg">
                   09ACSPC3613R1Z1
                 </p>
-              </div>
-            </div>
-
-            <div className="pt-4">
-              <div className="text-white font-semibold mb-4 text-lg">Follow Us</div>
-              <div className="flex gap-4">
-                <a 
-                  href="https://www.instagram.com/rew_bakerymachines" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-[#2a1810] rounded-full flex items-center justify-center border border-[#c9923f]/20 hover:border-[#c9923f] transition-all hover:scale-110"
-                > 
-                  <Instagram className="text-[#d4a574]" size={20} />
-                </a>
               </div>
             </div>
           </div>
