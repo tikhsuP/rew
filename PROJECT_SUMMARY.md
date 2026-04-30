@@ -155,7 +155,7 @@ Website URL: https://config-driven-web-1.preview.emergentagent.com
 ## 📝 Notes
 
 - **Contact Form Removed**: As requested, the inquiry form has been replaced with direct contact options (phone, email, social media)
-- **Client Logos**: Using text-based placeholders for major Indian brands (Britannia, Parle, Patanjali, etc.)
+- **Client Logos**: Using text-based placeholders for major Indian brands (Britannia, Parle, etc.)
 - **Images**: Professional industrial bakery machinery images sourced from Unsplash and Pexels
 - **Config-Driven**: All content is easily modifiable from component files
 - **Production Ready**: Optimized for performance and SEO
