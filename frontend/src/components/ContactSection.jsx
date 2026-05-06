@@ -58,7 +58,7 @@ const ContactSection = () => {
               <div className="w-12 h-12 bg-[#c9923f]/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <img src="/instagram.svg" width={20} height={20} />
               </div>
-              <div className="text-white font-semibold mb-2">
+              <div>
                 <div className="text-white font-semibold mb-2">Instagram</div>
               <a 
                   href="https://www.instagram.com/rew_bakerymachines"
