@@ -74,7 +74,7 @@ const RecognitionsSection = () => {
     <section
       id="recognitions"
       data-testid="recognitions-section"
-      className="py-16 lg:py-20 bg-[#0f0805] relative overflow-hidden"
+      className="py-16 lg:py-24 bg-[#0f0805] relative overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="mb-12">

@@ -39,7 +39,7 @@ const PresenceSection = () => {
   ];
 
   return (
-    <section id="presence" className="py-16 bg-[#1a0f08]">
+    <section id="clients" className="py-16 lg:py-24 bg-[#0D0D0D] relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
           Our Clients Across India

@@ -14,14 +14,15 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Products', 'Clients', 'Recognitions', 'Contact'];
+  const navItems = ['Home', 'About', 'Products', 'Clients', 'Recognitions', 'Contact'];
 
   const scrollToSection = (item) => {
     setIsMobileMenuOpen(false);
     const sectionMap = {
       'Home': 'hero',
+      'About': 'about',
       'Products': 'products',
-      'Clients': 'presence',
+      'Clients': 'clients',
       'Recognitions': 'recognitions',
       'About': 'about',
       'Contact': 'contact'
