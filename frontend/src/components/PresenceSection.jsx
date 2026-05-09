@@ -1,45 +1,49 @@
-import React from 'react';
-import { Flag, Award, MapPin } from 'lucide-react';
+import React from "react";
+import { Flag, Award, MapPin } from "lucide-react";
 
 const PresenceSection = () => {
   const clients = [
-    { name: 'Bakked Diamond', logo: '/bakked-diamond-logo.png' },
-    { name: 'Bread-G', logo: '/breadg-logo.png' },
-    { name: 'HAFIZ A SATTAR SONS SEWAI', logo: '/hafiz-logo.png' },
-    { name: 'Jail Police', logo: '/jail-police-logo.png' },
-    { name: 'Ashok', logo: '/ashok-logo.png' },
-    { name: 'Goldiee Masale', logo: '/goldiee-logo.png' },
-    { name: 'Bran-O', logo: '/brano-logo.png' },
-    { name: 'Popular', logo: '/popular-logo.png' },
-    { name: 'Gomti Food Products', logo: '/gomti-logo.png' },
-    { name: 'Milkmade', logo: '/milkmade-logo.png' },
-    { name: 'Swati Food Products', logo: '/swati-logo.png' },
-    { name: 'Baked Well', logo: '/baked-well-logo.png' },
-    { name: 'Nova', logo: '/nova-logo.png' },
-    { name: 'Mother', logo: '/mother-logo.png' },
-    { name: 'OnceMore Rainforest', logo: '/rainforest-logo.png' },
-    { name: 'Maheshwari Sweets', logo: '/maheshwari-logo.png' },
-    { name: 'thekaranfoods', logo: '/karans-logo.png' },
-    { name: 'Paradise', logo: '/paradise-logo.png' },
-    { name: 'Veetaday Industries', logo: '/veetaday-logo.png' },
-    { name: 'Good Morning Nutritive India', logo: '/goodmorning-logo.png' },
-    { name: 'Kalory', logo: '/kalory-logo.png' },
-    { name: 'Amrit Taaza', logo: '/amrit-taaza-logo.png' },
-    { name: 'Anand Bakery', logo: '/anand-bakery-logo.png' },
-    { name: 'Mithila Naturals', logo: '/mithila-logo.png' },
-    { name: 'Sangri-La Nutri Food Products', logo: '/sangrila-logo.png' },
-    { name: 'SDZ FOOD PRODUCTS', logo: '/sdz-logo.png' },
-    { name: 'GS Manglani', logo: '/gs-manglani-logo.png' },
-    { name: 'Meera Bakers', logo: '/meera-bakers-logo.png' },
-    { name: 'Badshah', logo: '/badshah-logo.png' },
-    { name: 'Banas Dairy', logo: '/banas-dairy-logo.png' },
-    { name: 'Amul', logo: '/amul-logo.png' },
-    { name: 'Britannia', logo: '/britannia-logo.png' },
-    { name: 'Parle', logo: '/parle-logo.png' }
+    { name: "Bakked Diamond", logo: "/bakked-diamond-logo.webp" },
+    { name: "Bread-G", logo: "/breadg-logo.webp" },
+    { name: "HAFIZ A SATTAR SONS SEWAI", logo: "/hafiz-logo.webp" },
+    { name: "Jail Police", logo: "/jail-police-logo.webp" },
+    { name: "Ashok", logo: "/ashok-logo.webp" },
+    { name: "Goldiee Masale", logo: "/goldiee-logo.webp" },
+    { name: "Bran-O", logo: "/brano-logo.webp" },
+    { name: "Popular", logo: "/popular-logo.webp" },
+    { name: "Gomti Food Products", logo: "/gomti-logo.webp" },
+    { name: "Milkmade", logo: "/milkmade-logo.webp" },
+    { name: "Swati Food Products", logo: "/swati-logo.webp" },
+    { name: "Baked Well", logo: "/baked-well-logo.webp" },
+    { name: "Nova", logo: "/nova-logo.webp" },
+    { name: "Mother", logo: "/mother-logo.webp" },
+    { name: "OnceMore Rainforest", logo: "/rainforest-logo.webp" },
+    { name: "Maheshwari Sweets", logo: "/maheshwari-logo.webp" },
+    { name: "thekaranfoods", logo: "/karans-logo.webp" },
+    { name: "Paradise", logo: "/paradise-logo.webp" },
+    { name: "Veetaday Industries", logo: "/veetaday-logo.webp" },
+    { name: "Good Morning Nutritive India", logo: "/goodmorning-logo.webp" },
+    { name: "Kalory", logo: "/kalory-logo.webp" },
+    { name: "Amrit Taaza", logo: "/amrit-taaza-logo.webp" },
+    { name: "Anand Bakery", logo: "/anand-bakery-logo.webp" },
+    { name: "Mithila Naturals", logo: "/mithila-logo.webp" },
+    { name: "Sangri-La Nutri Food Products", logo: "/sangrila-logo.webp" },
+    { name: "SDZ FOOD PRODUCTS", logo: "/sdz-logo.webp" },
+    { name: "GS Manglani", logo: "/gs-manglani-logo.webp" },
+    { name: "Meera Bakers", logo: "/meera-bakers-logo.webp" },
+    { name: "Badshah", logo: "/badshah-logo.webp" },
+    { name: "Banas Dairy", logo: "/banas-dairy-logo.webp" },
+    { name: "Amul", logo: "/amul-logo.webp" },
+    { name: "Britannia", logo: "/britannia-logo.webp" },
+    { name: "Parle", logo: "/parle-logo.webp" },
+    { name: "Gogiya", logo: "/gogiya-logo.webp" },
   ];
 
   return (
-    <section id="clients" className="py-16 lg:py-24 bg-[#0D0D0D] relative overflow-hidden">
+    <section
+      id="clients"
+      className="py-16 lg:py-24 bg-[#0D0D0D] relative overflow-hidden"
+    >
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
           Our Clients Across India
@@ -52,7 +56,7 @@ const PresenceSection = () => {
           </div>
           <div className="flex items-center gap-2 bg-[#2a1810] px-4 py-2 rounded border border-[#c9923f]/20">
             <Award className="text-[#d4a574]" size={18} />
-            <span className="text-white/90 text-sm">100+ Clients</span>
+            <span className="text-white/90 text-sm">750+ Clients</span>
           </div>
           <div className="flex items-center gap-2 bg-[#2a1810] px-4 py-2 rounded border border-[#c9923f]/20">
             <MapPin className="text-[#d4a574]" size={18} />
@@ -67,10 +71,10 @@ const PresenceSection = () => {
               className="bg-white rounded-lg p-6 flex items-center justify-center h-28 hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
               {client.logo ? (
-                <img 
-                  src={client.logo} 
+                <img
+                  src={client.logo}
                   alt={client.name}
-                  className={`object-contain ${'w-[95%] h-[95%]'}`}
+                  className={`object-contain ${"w-[95%] h-[95%]"}`}
                 />
               ) : (
                 <div className="text-center">

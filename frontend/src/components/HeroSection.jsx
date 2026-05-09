@@ -15,17 +15,35 @@ const HeroSection = () => {
       id="hero"
       className="relative h-screen flex items-center"
       style={{
-        backgroundImage: "url(/hero.png)",
+        backgroundImage: "url(/hero.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#1a0f08] via-[#1a0f08]/70 to-transparent"></div>
 
+      {/* MII & MSME logos — top right, below fixed navbar, side by side */}
+      <div className="absolute z-20 top-24 sm:top-28 right-4 sm:right-6 lg:right-12 flex flex-row flex-wrap items-center justify-end gap-3 pointer-events-none">
+        <span className="inline-flex items-center justify-center rounded-md bg-white px-2 py-1.5 shadow-sm">
+          <img
+            src="/mii.png"
+            alt="Make in India"
+            className="h-12 sm:h-14 md:h-16 w-auto max-w-[140px] sm:max-w-[180px] object-contain"
+          />
+        </span>
+        <span className="inline-flex items-center justify-center rounded-md bg-white px-2 py-1.5 shadow-sm">
+          <img
+            src="/msme.webp"
+            alt="MSME"
+            className="h-12 sm:h-14 md:h-16 w-auto max-w-[140px] sm:max-w-[180px] object-contain"
+          />
+        </span>
+      </div>
+
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight">
-            Industrial Bakery Machinery
+            Bakery Machines
           </h1>
 
           <h2 className="text-2xl lg:text-3xl text-[#d4a574] mb-6 font-normal">
@@ -60,7 +78,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 bg-[#2a1810]/60 px-4 py-2 rounded">
               <Award className="text-[#d4a574]" size={18} />
-              <span className="text-white text-sm">500+ Installations</span>
+              <span className="text-white text-sm">1000+ Installations</span>
             </div>
           </div>
         </div>
